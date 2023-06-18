@@ -8,3 +8,182 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+
+
+img{
+    width: 10vw;
+}
+
+nav{
+    background-color: rgb(88, 19, 88);
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    }
+    .nav-bar, .nav-buttons{
+    display: flex;
+    align-items: center;
+    }
+    .nav-bar{
+        width: 200vw;
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .nav-list{
+        width: 70vw;
+        list-style: none;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+    #list-item > a{
+        color: white;
+        text-decoration: none;
+        font-size: small;
+        font-weight: 500;
+    }
+
+    .button{
+        width: 4vw
+    }
+
+header{background-color: rgb(88, 19, 88);
+color: white;
+font-size: larger;
+height: 40vw;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.header2>img{
+ width: 40vw;  
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.header-button1{
+width: 25vw;
+font-size: medium;
+border-color: grey;
+border-radius: 1vh;
+}
+.header-button2{
+    width: 25vw;
+    background-color: rgb(4, 150, 255);
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-color: rgb(4, 150, 255);
+    border-radius: 1vh;
+}
+.logo-google{
+    width: 5vw;
+    background-color: white;
+}
+
+
+
+main{
+    background-color: rgb(243, 235, 224);
+}
+.main-title{
+    font-size: larger;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#main-images{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#tool{
+    display: flex;
+    justify-content: space-around;
+    }
+   .tool-image{
+    width: 40vh;
+   }
+  #main2{
+    background-color: white;
+  }
+  #main3{
+    background-color:rgb(88, 19, 88); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* MOBILE SCREEN SET UP*/
+
+    @media (max-width:768px) {
+
+       /* NAV BAR ADJUSTMENT*/
+        nav{
+            width: 100%;
+        }
+        .nav-list{
+            display: none;
+        }
+        .nav-bar{
+            justify-content: flex-start;
+        }
+
+        /*HEADER ADJUSTMENT*/
+        header{
+            height: max-content;
+            flex-wrap: wrap;
+        }
+        #header-image{
+            width: 90vw;
+        }
+        .header-buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       .header1{
+        text-align: center;
+       }
+       .header-button1,.header-button2{
+        width: 400px;
+        justify-content: center;
+       }
+
+        /*MAIN ADJUSTMENT*/
+    
+        #main-images{
+            display: flexbox;
+            flex-wrap: wrap;
+        }
+#main-images>.mainlogo{
+    width: 20vw;
+    height: fit-content;   
+}
+#tool{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+}
